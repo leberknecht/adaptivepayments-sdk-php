@@ -1,4 +1,7 @@
 <?php
+
+use PayPal\Core\PPMessage;
+
  /**
   * Stub objects for AdaptivePayments 
   * Auto generated code 
