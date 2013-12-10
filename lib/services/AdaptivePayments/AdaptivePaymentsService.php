@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+use PayPal\Core\PPBaseService;
+use PayPal\Core\PPUtils;
 
 /**
  * AUTO GENERATED code for AdaptivePayments
@@ -18,7 +21,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	protected static $SDK_VERSION = "2.5.106";
 
 	public function __construct($config = null) {
-		parent::__construct(self::$SERVICE_NAME, 'NV', array('PPPlatformServiceHandler'), $config);
+		parent::__construct(self::$SERVICE_NAME, 'NV', array('PayPal\Handler\PPPlatformServiceHandler'), $config);
         parent::$SDK_NAME    = self::$SDK_NAME ;
         parent::$SDK_VERSION = self::$SDK_VERSION;
 	}
